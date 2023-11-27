@@ -25,9 +25,10 @@ Auth::routes();
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
 Route::resource('/posts','App\Http\Controllers\PostsController');
 
-Route::get('livewire-posts','App\Http\Controllers\PostsController@index_livewire');
-
 Route::get('livewire/posts' ,   Posts::class);
 Route::get('/livewire/posts/create' ,    CreatePost::class);
 Route::get('/livewire/posts/{id}' ,     \App\Livewire\ShowPost::class);
 Route::get('/livewire/posts/{id}/edit' ,     EditPost::class);
+
+//step 2
+Route::get('/dynamic/posts' ,     \App\Livewire\Dynamic\Posts::class);

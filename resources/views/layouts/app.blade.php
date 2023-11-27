@@ -90,13 +90,13 @@
         </div>
     </main>
 </div>
-<script>
-    $(function () {
-        $('#alert-session').fadeTo(5000, 500).slideUp(500, function () {
-            $(this).slideUp(500);
-        })
-    });
-</script>
+{{--<script>--}}
+{{--    $(function () {--}}
+{{--        $('#alert-session').fadeTo(5000, 500).slideUp(500, function () {--}}
+{{--            $(this).slideUp(500);--}}
+{{--        })--}}
+{{--    });--}}
+{{--</script>--}}
 <livewire:scripts/>
 @stack('scripts')
 </body>
